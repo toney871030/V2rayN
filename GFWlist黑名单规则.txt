@@ -1,12 +1,16 @@
-[
-  {
+   [
+    {
+    "type": "field",
     "outboundTag": "proxy",
     "domain": [
+      "#GFW域名列表",
+      "geosite:gfw",
+      "geosite:greatfire",
       "#以下三行是GitHub网站，为了不影响下载速度走代理",
       "github.com",
       "githubassets.com",
       "githubusercontent.com",
-      "# 代理的流量列表（geoip）",
+      "# 代理流量列表（geoip）",
       "geoip:cloudflare",
       "geoip:cloudfront",
       "geoip:facebook",
@@ -34,7 +38,20 @@
       "pypi.org",
       "python.org",
       "pythonhosted.org"
-    ]
+       ],
+     "ip": [
+      "geoip:cloudflare",
+      "geoip:cloudfront",
+      "geoip:facebook",
+      "geoip:fastly",
+      "geoip:google",
+      "geoip:netflix",
+      "geoip:telegram",
+      "geoip:twitter",
+      "172.110.32.0/21",
+      "216.73.80.0/20",
+      "2620:120:e000::/40"
+     ]
    },
   {
     "outboundTag": "block",
@@ -44,6 +61,7 @@
     ]
   },
   {
+    "type": "field",
     "outboundTag": "direct",
     "domain": [
       "# 以下为国内直连的域名列表",
@@ -85,30 +103,7 @@
       "geosite:google-cn",
       "#下一行包含可直连访问苹果网址，需要替换为加强版GEO文件，如已手动更新为加强版GEO文件，删除此行前面的#号使其生效",
       "geosite:apple-cn"
-    ]
-   },
-  {
-    "type": "field",
-    "outboundTag": "proxy",
-    "domain": [
-      "#GFW域名列表",
-      "geosite:gfw",
-      "geosite:greatfire"
-    ]
-  },
-    {
-    "type": "field",
-    "outboundTag": "proxy",
-    "ip": [
-      "geoip:cloudflare",
-      "geoip:cloudfront",
-      "geoip:facebook",
-      "geoip:fastly",
-      "geoip:google",
-      "geoip:netflix",
-      "geoip:telegram",
-      "geoip:twitter"
-    ]
+     ]
   },
   {
     "type": "field",
@@ -120,5 +115,5 @@
     "port": "0-65535",
     "outboundTag": "direct",
     "network": "tcp,udp"
-  }
-]
+    }
+  ]
