@@ -23,6 +23,7 @@
       "geoip:fastly",
       "geoip:google",
       "geoip:netflix",
+      "geoip:youtube",
       "geoip:telegram",
       "geoip:twitter",
       "# 代理域名列表",
