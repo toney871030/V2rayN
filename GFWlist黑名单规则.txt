@@ -115,19 +115,8 @@
       "geosite:google-cn",
       "#下一行包含可直连访问苹果网址，需要替换为加强版GEO文件，如已手动更新为加强版GEO文件，删除此行前面的#号使其生效",
       "geosite:apple-cn"
-     ],
-    "ip":[
-         "geosite:cn",
-         "geosite:private",
-         "geosite:adobe",
-         "geosite:adobe-activation",
-         "geosite:microsoft",
-         "geosite:msn",
-         "geosite:apple",
-         "geosite:category-ads-all",
-         "geosite:google-cn",
-         "geosite:apple-cn"
-         ]
+     ]
+    
   },
   {
     "type": "field",
