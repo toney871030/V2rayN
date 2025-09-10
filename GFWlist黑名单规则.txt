@@ -86,7 +86,6 @@
       "linux.do",
       "hybase.com",
       "52pojie.cn",
-      "pc528.net",
       "winos.me",
       "423down.com",
       "masuit.net",
